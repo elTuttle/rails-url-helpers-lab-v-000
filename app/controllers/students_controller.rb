@@ -11,7 +11,7 @@ class StudentsController < ApplicationController
   def show
     #binding.pry
     id = params[:id]
-    @student = Student.find(id: id)
+    @student = Student.find(:id => id)
     render "show"
   end
 
