@@ -17,7 +17,7 @@ class StudentsController < ApplicationController
     #binding.pry
     student.active = !student.active
     #binding.pry
-    render "show"
+    student_path(student)
   end
 
   private
