@@ -12,6 +12,10 @@ class StudentsController < ApplicationController
     render "show"
   end
 
+  def activate
+    
+  end
+
   private
 
     def set_student
