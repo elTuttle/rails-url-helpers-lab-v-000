@@ -7,7 +7,7 @@ class Student < ActiveRecord::Base
   end
 
   def active
-    @active || true
+    @active || false
   end
 
 end
