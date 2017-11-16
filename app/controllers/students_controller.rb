@@ -14,7 +14,7 @@ class StudentsController < ApplicationController
 
   def activate
     @student = Student.find_by(id: params[:id])
-    render "activate"
+    render "show"
   end
 
   private
