@@ -1,5 +1,2 @@
-<%if @student.active == false%>
-  <h1>This student is currently inactive.</h1>
-<%else%>
-  <h1>This student is currently active.</h1>
-<%end%>
+<%  @student.active = !@student.active %>
+<% render "show"
