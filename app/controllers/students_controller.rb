@@ -16,6 +16,7 @@ class StudentsController < ApplicationController
     student = Student.find_by(id: params[:id])
     binding.pry
     student.active = !student.active
+    binding.pry
     render "show"
   end
 
