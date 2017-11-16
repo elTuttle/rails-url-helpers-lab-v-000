@@ -13,7 +13,8 @@ class StudentsController < ApplicationController
   end
 
   def activate
-    render "activate"
+    @student.active = !@student.active
+    render "show"
   end
 
   private
