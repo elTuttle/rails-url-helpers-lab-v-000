@@ -10,6 +10,7 @@ class StudentsController < ApplicationController
 
   def show
     binding.pry
+    id = params[:id]
     @student = Student.find(id: params[:id])
     render "show"
   end
