@@ -13,7 +13,7 @@ class StudentsController < ApplicationController
   end
 
   def activate
-    binding.pry
+    render "activate"
   end
 
   private
