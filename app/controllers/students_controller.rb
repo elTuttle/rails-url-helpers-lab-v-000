@@ -13,11 +13,9 @@ class StudentsController < ApplicationController
 
   def activate
     @student = Student.find_by(id: params[:id])
-    binding.pry
     if @student != nil
       @student.active = !@student.active
     end
-    binding.pry
     redirect_to student_path(@student)
   end
 
