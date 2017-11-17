@@ -1,6 +1,6 @@
 class Student < ActiveRecord::Base
 
-  attr_writer :active
+  attr_accessor :active
 
   after_initialize :attr_set
 
@@ -9,7 +9,7 @@ class Student < ActiveRecord::Base
   end
 
   def attr_set
-    @active || false
+    @active = 
   end
 
 end
