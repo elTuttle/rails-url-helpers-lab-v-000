@@ -15,6 +15,7 @@ class StudentsController < ApplicationController
     if @student != nil
       @student.active = !@student.active
     end
+    binding.pry
     redirect_to student_path(@student)
   end
 
