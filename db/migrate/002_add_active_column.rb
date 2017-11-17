@@ -2,7 +2,7 @@ class AddActiveColumn < ActiveRecord::Migration
 
   def change
     change_table :students do |t|
-    add_column :active, :boolean, :null => false, :default => 0
+      t.boolean :active, :boolean, :null => false, :default => 0
   end
 
 end
