@@ -13,7 +13,9 @@ class StudentsController < ApplicationController
   def activate
     @student = Student.find_by(id: params[:id])
     #binding.pry
-    @student.active = !@student.active
+    if @student != nil
+      @student.active = !@student.active
+    end
     #binding.pry
     render "activate"
   end
