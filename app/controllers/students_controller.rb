@@ -14,7 +14,7 @@ class StudentsController < ApplicationController
     @student = Student.find_by(id: params[:id])
     binding.pry
     if @student != nil
-      @student.active = !@student.active
+      @student.update(active: !@student.active)
     end
     binding.pry
     redirect_to student_path(@student)
