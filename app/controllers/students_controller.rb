@@ -17,7 +17,7 @@ class StudentsController < ApplicationController
       @student.active = !@student.active
     end
     #binding.pry
-    render "activate"
+    redirect_to student_path(@student)
   end
 
   private
