@@ -9,7 +9,7 @@ class Student < ActiveRecord::Base
   end
 
   def attr_set
-    @active = false
+    @active = true
   end
 
 end
