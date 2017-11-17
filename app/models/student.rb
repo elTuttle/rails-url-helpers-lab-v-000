@@ -8,7 +8,7 @@ class Student < ActiveRecord::Base
     self.first_name + " " + self.last_name
   end
 
-  def active
+  def attr_set
     @active || false
   end
 
